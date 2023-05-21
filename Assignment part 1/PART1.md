@@ -6,7 +6,7 @@ No | ID         | Name | Task descriptions | Contribution %
 -- | ---------- | ---- | ----------------- | --------------
 1  |1211103024  |Yap Jack|task 1,2          |25%
 2  |1201101484  |Kisshend|Task:4,5          |25%
-3  |1211103184  |MUHAMMAD|task 2,6          |25%
+3  |1211103184  |Muzzafar|task 2,6          |25%
 4  |1221303877  |PRAVIN  | task 3,4         |25%
 
 
