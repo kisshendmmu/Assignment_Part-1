@@ -1,13 +1,10 @@
-//import java.util.List;
 import java.util.Scanner;
-import java.util.Vector;
 import java.util.ArrayList;
 
 public class GameRunner {
 
     public static void main(String[] args) {
 
-        System.out.println("At the beginning of a game. The first lead card s7 is placed at the center. Player3 is the first player because of s7.");
         System.out.println("C = Club");
         System.out.println("D= Diamond");
         System.out.println("H = Heart");
@@ -24,8 +21,11 @@ public class GameRunner {
         Deck playingDeck = new Deck();
         playingDeck.createFullDeck();
         playingDeck.shuffle();
+        //System.out.print("Deck: ");
+        //player1.printOut(playingDeck);
 
         ArrayList<Card> centerCards = new ArrayList<>();
+
 
         //Deck center = new Deck();
         Deck player1 = new Deck(); //change 
@@ -38,37 +38,12 @@ public class GameRunner {
         playingDeck.removeCard(0); // Remove the first card from the deck
         centerCards.add(leadCard); // Add the lead card to the center cards
 
-        player1.draw(playingDeck);
-        player1.draw(playingDeck);
-        player1.draw(playingDeck);
-        player1.draw(playingDeck);
-        player1.draw(playingDeck);
-        player1.draw(playingDeck);
-        player1.draw(playingDeck);
-
-        player2.draw(playingDeck);
-        player2.draw(playingDeck);
-        player2.draw(playingDeck);
-        player2.draw(playingDeck);
-        player2.draw(playingDeck);
-        player2.draw(playingDeck);
-        player2.draw(playingDeck);
-
-        player3.draw(playingDeck);
-        player3.draw(playingDeck);
-        player3.draw(playingDeck);
-        player3.draw(playingDeck);
-        player3.draw(playingDeck);
-        player3.draw(playingDeck);
-        player3.draw(playingDeck);
-
-        player4.draw(playingDeck);
-        player4.draw(playingDeck);
-        player4.draw(playingDeck);
-        player4.draw(playingDeck);
-        player4.draw(playingDeck);
-        player4.draw(playingDeck);
-        player4.draw(playingDeck);
+        for(int i = 0; i < 7; i++){
+            player1.draw(playingDeck);
+            player2.draw(playingDeck);
+            player3.draw(playingDeck);
+            player4.draw(playingDeck);
+        }
 
         System.out.println("Center: " + centerCards + "\n");
         System.out.print("Player1: ");
@@ -99,6 +74,8 @@ public class GameRunner {
 
 
     private static String determineFirstPlayer(Card leadCard) {
+
+
         String cardValue = leadCard.getValue().toString();
         if (cardValue.equals("A") || cardValue.equals("5") || cardValue.equals("9") || cardValue.equals("K")) {
             return "Player1";
@@ -111,6 +88,4 @@ public class GameRunner {
         } else {
             return "Unknown";
         }
-        
     }
-}
