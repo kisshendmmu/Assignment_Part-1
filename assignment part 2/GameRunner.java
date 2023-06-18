@@ -354,9 +354,7 @@ public class GameRunner {
         }
     }
 
-    //private void assignscore() {
-    //    lines.get(7) = 
-    //}
+    
 
     private void loadGame(Player currentPlayer ){
         List<String> lines = new ArrayList<>();
