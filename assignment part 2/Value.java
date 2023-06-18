@@ -9,7 +9,7 @@ public class Value {
         myValue.add("A");
         myValue.add("2");
         myValue.add("3");
-        myValue.add("P");
+        myValue.add("4");
         myValue.add("5");
         myValue.add("6");
         myValue.add("7");
