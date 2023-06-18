@@ -4,10 +4,10 @@
 
 No | ID         | Name | Task descriptions | Contribution %
 -- | ---------- | ---- | ----------------- | --------------
-1  | 1221234567 |      |                   |
-2  |            |      |                   |
-3  |            |      |                   |
-4  |            |      |                   |
+1  | 1201101484|Kisshend| Task 4,8         |25%
+2  |1211103024|Yap Jack |  Task 1,3        |25%
+3  |1211103184|Muzaffar|   Task 2,5        |25%
+4  |1221303877|Pravin|      Task 8         |25%
 
 
 ## B. Part 1 Feature Completion (Latest)
